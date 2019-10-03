@@ -2,7 +2,6 @@ import React from 'react';
 
 const EventEntry = (props) => {
   const { event } = props;
-  console.log(event);
   let timePeriod = 'AD';
   let { date } = event;
   if (date[0] === '-') {
@@ -14,24 +13,16 @@ const EventEntry = (props) => {
   return (
     <div>
       <div>
-        Date: 
-{' '}
-{date}
+        Date: {date}
       </div>
       <div>
-        Language: 
-{' '}
-{event.lang}
+        Language: {event.lang}
       </div>
       <div>
-        Category: 
-{' '}
-{event.category1}
+        Category: {event.category1}
       </div>
       <div>
-        Granularity: 
-{' '}
-{event.granularity}
+        Granularity: {event.granularity}
       </div>
       <div>
 Description:
