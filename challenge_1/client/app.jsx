@@ -31,7 +31,7 @@ class App extends React.Component {
       });
   }
 
-  handleSearchQuery() {
+  handleSearchQuery(event) {
     this.setState({
       searchQuery: event.target.value,
     });
